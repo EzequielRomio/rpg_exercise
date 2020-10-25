@@ -124,7 +124,6 @@ class Sword(Item):
         self.power = 50
     
     def use(self, player):
-        print('Take this MotherFucker! (you have attacked yourself?!?!?!)')
         player.recive_damage(self.power)
         print('Health = {}'.format(player.health))
         if not player.is_alive():
@@ -162,7 +161,7 @@ class Boots(Item):
 
 class Ring(Item):
     def __init__(self):
-        self.description = 'Each day more asshole'
+        self.description = 'A Ring'
         self.quantity = 1
         self.price = 10
 
